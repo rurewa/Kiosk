@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Валидация форм">
+        <meta name="autor" content="Alex">
+        <title>Валидация форм</title>
+    </head>
+    <body>
+        <a href="../index.html"><input type="button" value="Back to Start page!"></a>
+        <a href="page.html"><input type="button" value="Second page"></a>
+        <a href="page2.html"><input type="button" value="Third page"></a>
+        <a href="page3.html"><input type="button" value="Three page"></a>
+        <a href="page4.html"><input type="button" value="Четвёртая страница"></a>
+        <a href="page5.html"><input type="button" value="Пятая страница"></a>
+        <a href="page6.html"><input type="button" value="Шестая страница"></a>
+        <a href="page7.html"><input type="button" value="Седьмая страницы"></a>
+        <a href="page8.html"><input type="button" value="Восьмая страница"></a>
+        <a href="page9.html"><input type="button" value="Девятая страница"></a>
+        <a href="page10.html"><input type="button" value="Десятая страница"></a>
+        <a href="page11.html"><input type="button" value="Одинадцатая страница"></a>
+        <a href="page12.html"><input type="button" value="Двенадцатая страница"></a>
+        <a href="page13.html"><input type="button" value="Тренадцатая страница"></a>
+        <a href="page14.html"><input type="button" value="Четырнадцатая страница"></a>
+        <a href="page15.html"><input type="button" value="Пятнадцатая страница"></a>
+        <a href="page17.html"><input type="button" value="Семнадцатая страница"></a>
+        <a href="page18.html"><input type="button" value="Восемнадцатая страница"></a>
+        <a href="page19.html"><input type="button" value="Девятнадцатая страница"></a>
+        <h3>Валидация форм</h3>
+        <div>
+            <form method="get">
+                <p>
+                    <label for="login">Логин</label>
+                    <input type="text" required id="login" name="login"><!--required - валидация поля-->
+                </p>
+                <p>
+                    <label for="password">Пароль</label>
+                    <input type="password" required id="password" name="password">
+                </p>
+                <p>
+                    <input type="submit" value="Отправить">
+                </p>
+            </form>
+        </div>
+        <h3>Атрибуты max и min</h3>
+        <div>
+            <form method="get">
+                <p>
+                    <label for="age">Возраст</label><!--Минимум 1, максимум 100 - валидация поля-->
+                    <input type="number" min="1" max="100" value="18"id="age" name="age">
+                </p>
+                <p>
+                    <input type="submit" value="Отправить">
+                </p>
+            </form>
+        </div>
+        <h3>Атрибут pattern</h3>
+        <div>
+            <form method="get">
+                <p>
+                    <label for="phone">Телефон:</label>
+                    <input type="text" placeholder="+1-234-567-8901" pattern="\+\d-\d{3}-\d{3}-\d{4}" id="phone" name="phone" />
+                </p>
+                <p>
+                    <input type="submit" value="Отправить" />
+                </p>
+            </form>
+        </div>
+        <h3>Отключение валидации</h3>
+        <div>
+            <form method="get">
+                <p>
+                    <label for="phone">Телефон</label>
+                    <input type="text" placeholder="+1-234-567-8901" pattern="\+\d-\d{3}-\d{3}-\d{4}" id="phone" name="phone"
+                        name="phone">
+                </p>
+                <p>
+                    <input type="submit" value="Отправить" formnovalidate>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="dtscription" content="Список select">
+        <meta name="autor" content="Alex">
+        <title>Список select</title>
+    </head>
+    <body>
+        <a href="../index.html"><input type="button" value="Back to Start page!"></a>
+        <a href="page.html"><input type="button" value="Second page"></a>
+        <a href="page2.html"><input type="button" value="Third page"></a>
+        <a href="page3.html"><input type="button" value="Three page"></a>
+        <a href="page4.html"><input type="button" value="Четвёртая страница"></a>
+        <a href="page5.html"><input type="button" value="Пятая страница"></a>
+        <a href="page6.html"><input type="button" value="Шестая страница"></a>
+        <a href="page7.html"><input type="button" value="Седьмая страницы"></a>
+        <a href="page8.html"><input type="button" value="Восьмая страница"></a>
+        <a href="page9.html"><input type="button" value="Девятая страница"></a>
+        <a href="page10.html"><input type="button" value="Десятая страница"></a>
+        <a href="page11.html"><input type="button" value="Одинадцатая страница"></a>
+        <a href="page12.html"><input type="button" value="Двенадцатая страница"></a>
+        <a href="page13.html"><input type="button" value="Тренадцатая страница"></a>
+        <a href="page15.html"><input type="button" value="Пятнадцатая страница"></a>
+        <a href="page16.html"><input type="button" value="Шестнадцатая страница"></a>
+        <a href="page17.html"><input type="button" value="Семнадцатая страница"></a>
+        <a href="page18.html"><input type="button" value="Восемнадцатая страница"></a>
+        <a href="page19.html"><input type="button" value="Девятнадцатая страница"></a>
+        <h3>Список select</h3>
+        <div>
+            <p>
+                <label for="phone">Выбор модели</label>
+                <select name="phone" id="phone">
+                    <!--значение элемента option не обязательно должно совпадать с отображаемым им текстом-->
+                    <option value="iphone 6s">iphone 6s</option>
+                    <option value="lumia 950">lumia 950</option>
+                    <option value="nexus 5x">nexus 5x</option>
+                    <option value="galaxy s7">galaxy s7</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Отправить">
+            </p>
+        </div>
+        <h3>Выбор select по умолчанию</h3>
+        <div>
+            <p>
+                <label for="phone">Выбор модели</label>
+                <select name="phone" id="phone">
+                    <!--значение элемента option не обязательно должно совпадать с отображаемым им текстом-->
+                    <option value="iphone 6s">iphone 6s</option>
+                    <option value="lumia 950">lumia 950</option>
+                    <option value="nexus 5x">nexus 5x</option>
+                    <option value="galaxy s7" selected>galaxy s7</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Отправить">
+            </p>
+        </div>
+        <h3>Запред элемента select</h3>
+        <div>
+            <p>
+                <label for="phone">Выбор модели</label>
+                <select name="phone" id="phone">
+                    <!--значение элемента option не обязательно должно совпадать с отображаемым им текстом-->
+                    <option disabled selected>Выберите модель</option>
+                    <option value="iphone 6s">iphone 6s</option>
+                    <option value="lumia 950">lumia 950</option>
+                    <option value="nexus 5x">nexus 5x</option>
+                    <option value="galaxy s7">galaxy s7</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Отправить">
+            </p>
+        </div>
+        <h3>Список с множественным выбором</h3>
+        <div>
+            <form method="get">
+                <p>
+                    <label for="phone">Выбор модели</label>
+                    <br>
+                    <select multiple id="phone" name="phone">
+                        <option value="iphone 6s">iphone 6s</option>
+                        <option value="lumia 950">lumia 950</option>
+                        <option value="nexus 5x">nexus 5x</option>
+                        <option value="galaxy s7">galaxy s7</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="submit" value="Отправить">
+                </p>
+            </form>
+        </div>
+        <h3>Группировка элементов списка</h3>
+        <div>
+            <form method="get">
+                <p>
+                    <label for="phone">Выбор модели</label>
+                    <select id="phone" name="phone">
+                        <optgroup label="Apply">
+                            <option value="iphone 6s">iphone 6s</option>
+                            <option value="iphone 6s plus">iphone 6s plus</option>
+                            <option value="iphone 5se">iphone 5se</option>
+                        </optgroup>
+                        <optgroup label="Samsung">
+                            <option value="lumia 950">lumia 950</option>
+                            <option value="nexus 5x">nexus 5x</option>
+                            <option value="galaxy s7">galaxy s7</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <input type="submit" value="Отправить">
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
