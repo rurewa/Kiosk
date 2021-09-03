@@ -1,0 +1,19 @@
+div {
+    margin: 10px; /* Отступ от соседнего элемента */
+    border: 1px solid #222; /* Граница: толщин и цвет */
+}
+
+#header {
+    height: 80 px;
+    background-color: #ccc;
+}
+
+#content {
+    height: 180px;
+    background-color: #eee;
+}
+
+#footer {
+    height: 80px;
+    background-color: #ccc;
+}
