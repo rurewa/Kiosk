@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Alex">
+    <meta name="description" content="Примеры HTML5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблицы</title>
+    <!--Тут применяется стиль-->
+    <style>
+        td {
+            width: 60px; /*Ширина*/
+            height: 60px; /*Высота*/
+            border: 1px solid #e4e6ee; /*Граница: толщина, тип и цвет*/
+            text-align: center; /*Положение*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Таблицы</h1>
+    <h2>Пример самой простой таблицы</h2>
+    <table>
+        <tr>
+            <td>Это первый столбец</td>
+            <td>Это второй столбец</td>
+            <td>Это третий столбец</td>
+            <td>Это четвёртый столбец</td>
+        </tr>
+        <tr>
+            <td>1-я ячейка</td>
+            <td>2-я ячейка</td>
+            <td>3-я ячейка</td>
+            <td>4-я ячейка</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h2>Структурированная таблица</h2>
+    <table><!--Тэг caption размещается только внутри тэга table-->
+        <caption><b>Общий заголовок</b></caption>
+        <thead>
+            <tr><!--Строка-->
+                <td>Левый столбец</td><!--Ячейка-->
+                <td>Средний столбец</td>
+                <td>Правый столбец</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ячека</td>
+                <td>Ячека</td>
+                <td>Ячека</td>
+            </tr>
+            <tr>
+                <td>Ячека</td>
+                <td>Ячека</td>
+                <td>Ячека</td>
+            </tr>
+            <tr>
+                <td>Ячека</td>
+                <td>Ячека</td>
+                <td>Ячека</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr><!--colspan - это объединение по горизонтали ячеек таблицы-->
+                <th colspan="3">Информация по состоянию на 2021 г.</th>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <hr>
+    <p><h2>Пятнашки</h2></p>
+    <table>
+        <tr><!--rowspan - это объединение по вертикали ячеек таблицы-->
+            <td rowspan="2" style="background-color: bisque">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td rowspan="2" style="background-color: coral">6</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <p>Больше примеров таблиц можно увидеть по <a href="https://github.com/mdn/learning-area/tree/master/html/tables">ссылке</a></p>
+</body>
+</html>
